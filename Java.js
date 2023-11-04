@@ -1,22 +1,21 @@
-console.log("Good morning, Good evening and Goodnight")
+const randomNumber = Math.random()
+//if (randomNumber >= 0 && randomNumber <=  1 / 3) {
+  //  console.log('tiny number')
+//} else if( randomNumber > 1 / 3) {
+    //console.log('bigger number')
+//}
 
-let x = 'Rock' ;
-let y = 'Scissors'
-let z = 'Paper'
-
-function getComputerChoice(z=1){
-    if (x === 1) {
-        return y ;
-    } else if (y === 1) {
-        return z;
-    } else (z === 1) 
-        return x ;
+function getComputerChoice() {
+    if (randomNumber >= 0 && randomNumber < 1/3){
+        console.log('rock')
+    } else if (randomNumber >= 1/3 && randomNumber < 2/3){ 
+        console.log('paper')
+    } else (randomNumber >= 2/3)
+        console.log('scissors');
     }
+    
 
-    console.log(getComputerChoice(x=1))
-    console.log(getComputerChoice(y=1))
-    console.log(getComputerChoice(z=1))
+    
 
- 
-
+    getComputerChoice()
 
